@@ -1,0 +1,23 @@
+{
+  "cards": [
+
+    {
+      "id": 23,
+      "image": "images/card-icon-20.png",
+      "title": "PDF to Word",
+      "category": "PDF Tools",
+      "categorysty": "dec",
+        "type":"application/pdf",
+      "desc": "Convert PDF files to Word (doc, docx) and make them available for editing"
+    },
+    {
+      "id": 24,
+      "image": "images/card-icon-21.png",
+      "title": "Word to PDF",
+      "category": "PDF Tools",
+      "categorysty": "dec",
+      "type":"application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "desc": "Convert Word files (doc, docx) to PDF"
+    }
+  ]
+}
