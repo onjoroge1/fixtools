@@ -18,6 +18,15 @@
       "categorysty": "dec",
       "type":"application/vnd.openxmlformats-officedocument.wordprocessingml.document",
       "desc": "Convert Word files (doc, docx) to PDF"
+    },
+    {
+      "id": 25,
+      "image": "images/card-icon-21.png",
+      "title": "MInify CSS",
+      "category": "CSS Tools",
+      "categorysty": "dec",
+      "type":"application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "desc": "Convert Word files (doc, docx) to PDF"
     }
   ]
 }

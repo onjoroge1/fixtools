@@ -52,6 +52,7 @@ export default function Header() {
                         {/*<Button className="hero-content-nav-pro-btn" onClick={() => filterItems('PROBLEM SOLVING')}>problem solving</Button>*/}
                         {/*<Button className="hero-content-nav-com-btn" onClick={() => filterItems('communication')}>communication</Button>*/}
                         <Button className="hero-content-nav-dis-btn" onClick={() => filterItems('PDF Tools')}>PDF Tools</Button>
+                        <Button className="hero-content-nav-pro-btn" onClick={() => filterItems('CSS Tools')}>CSS Tools</Button>
                     </div>
                 </div>
             </div>
@@ -63,9 +64,7 @@ export default function Header() {
                         return (
                             <div className="main-content-card" key={id}>
                                 <Link  to={category === "PDF Tools" ? `/detail/${id}` : '/'}>
-
                                 <img src={image} alt="" />
-
                                 <h2 className="main-content-card-heading">
                                     {title}
                                 </h2>
@@ -74,10 +73,11 @@ export default function Header() {
                                     {desc}
                                 </p>
                                 </Link>
+
                             </div>
                         )
                     })
-                }
+                }               
             </div>
         </div>
     )

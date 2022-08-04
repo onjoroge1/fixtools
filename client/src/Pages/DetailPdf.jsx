@@ -34,6 +34,7 @@ export default function DetailPdf() {
 
         const formData = new FormData();
         formData.append('file', imgFile);
+        console.log(cardType)
 
 
             if (cardType ==  'application/pdf') {
