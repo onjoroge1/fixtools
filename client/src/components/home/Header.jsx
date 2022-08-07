@@ -59,11 +59,11 @@ export default function Header() {
             <div className='main-content'>
                 {
                     cards.map((ele) => {
-                        const { id, title, image, desc, category, categorysty } = ele;
+                        const { id, title, image, desc, category, categorysty,link } = ele;
 
                         return (
                             <div className="main-content-card" key={id}>
-                                <Link  to={category === "PDF Tools" ? `/detail/${id}` : '/'}>
+                                <Link to={category === "PDF Tools" ? `/detail/${id}` : '/MinifyCSS'}>
                                 <img src={image} alt="" />
                                 <h2 className="main-content-card-heading">
                                     {title}

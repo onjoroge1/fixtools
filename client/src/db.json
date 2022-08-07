@@ -7,7 +7,8 @@
       "title": "PDF to Word",
       "category": "PDF Tools",
       "categorysty": "dec",
-        "type":"application/pdf",
+      "type":"application/pdf",
+      "link":"/detail/23",
       "desc": "Convert PDF files to Word (doc, docx) and make them available for editing"
     },
     {
@@ -17,15 +18,17 @@
       "category": "PDF Tools",
       "categorysty": "dec",
       "type":"application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "link":"/detail/24",
       "desc": "Convert Word files (doc, docx) to PDF"
     },
     {
       "id": 25,
       "image": "images/card-icon-21.png",
-      "title": "MInify CSS",
+      "title": "Minify CSS",
       "category": "CSS Tools",
       "categorysty": "dec",
       "type":"application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "link":"/MinifyCSS",
       "desc": "Convert Word files (doc, docx) to PDF"
     }
   ]

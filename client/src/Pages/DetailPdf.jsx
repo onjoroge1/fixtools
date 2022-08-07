@@ -38,7 +38,7 @@ export default function DetailPdf() {
 
 
             if (cardType ==  'application/pdf') {
-                fetch('/api/image.png' , {
+                fetch('/api/officetopdf', {
                     method: 'POST',
                     body:formData
                 })
@@ -46,6 +46,7 @@ export default function DetailPdf() {
                         setFileLoading(false)
                         console.log(res, 'here is ressponse')
                         if(res.status == 200){
+                            console.log(res.status)
                             const resp = await  res.blob();
                             setResponseSave(resp)
                             setpickFile(true)
@@ -65,6 +66,7 @@ export default function DetailPdf() {
                     .then(async (res) =>{
                         setFileLoading(false)
                         if(res.status == 200){
+                            console.log(res.status)
                             const resp = await  res.blob();
                             setResponseSave(resp)
                             setpickFile(true)
