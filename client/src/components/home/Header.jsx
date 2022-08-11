@@ -53,6 +53,8 @@ export default function Header() {
                         {/*<Button className="hero-content-nav-com-btn" onClick={() => filterItems('communication')}>communication</Button>*/}
                         <Button className="hero-content-nav-dis-btn" onClick={() => filterItems('PDF Tools')}>PDF Tools</Button>
                         <Button className="hero-content-nav-pro-btn" onClick={() => filterItems('CSS Tools')}>CSS Tools</Button>
+                        <Button className="hero-content-nav-sys-btn" onClick={() => filterItems('JSON Tools')}>JSON Tools</Button>
+                        <Button className="hero-content-nav-com-btn" onClick={() => filterItems('HTML Tools')}>HTML Tools</Button>
                     </div>
                 </div>
             </div>
@@ -62,8 +64,8 @@ export default function Header() {
                         const { id, title, image, desc, category, categorysty,link } = ele;
 
                         return (
-                            <div className="main-content-card" key={id}>
-                                <Link to={category === "PDF Tools" ? `/detail/${id}` : '/MinifyCSS'}>
+                            <div className={`main-content-card ${categorysty}`} key={id}>
+                                <Link to={link}>
                                 <img src={image} alt="" />
                                 <h2 className="main-content-card-heading">
                                     {title}

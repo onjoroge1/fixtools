@@ -28,8 +28,8 @@ export default function MinifyCSS(){
             <label className="my-1 mr-2"><h2>Input CSS Code</h2></label>
             <form className="" role="form" onSubmit={handleSubmit}>
                 <div className="form-group">
-                <textarea className="form-control" rows="20" id="input-comment" value={formdata}
-            onChange={(e) => setformdata(e.target.value)}></textarea>
+                <textarea className="form-control" rows="15" id="input-comment" value={formdata}
+            onChange={(e) => setformdata(e.target.value)} style={{fontSize:'1.5rem'}}></textarea>
                 </div>
                 <p></p>
                 <div class="d-grid gap-3 col-md-2">

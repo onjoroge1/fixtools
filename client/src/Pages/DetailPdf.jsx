@@ -38,12 +38,13 @@ export default function DetailPdf() {
 
 
             if (cardType ==  'application/pdf') {
-                fetch('/api/officetopdf', {
+                fetch('http://localhost:8080/api/officetopdf', {
                     method: 'POST',
                     body:formData
                 })
                     .then(async (res) =>{
                         setFileLoading(false)
+                        console.log(res.status)
                         console.log(res, 'here is ressponse')
                         if(res.status == 200){
                             console.log(res.status)
@@ -59,12 +60,13 @@ export default function DetailPdf() {
                     })
             }
             else {
-                    fetch('/api/fileUpload' , {
+                    fetch('http://localhost:8080/api/fileUpload' , {
                     method: 'POST',
                     body:formData
                 })
                     .then(async (res) =>{
                         setFileLoading(false)
+                        console.log(res.status)
                         if(res.status == 200){
                             console.log(res.status)
                             const resp = await  res.blob();
